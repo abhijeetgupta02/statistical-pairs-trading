@@ -1,0 +1,20 @@
+[
+  {
+    "pair": "AAPL-MSFT",
+    "path": "data/AAPL_MSFT_2015_2023.csv",
+    "rows": 2264,
+    "sha256": "eccf178b237b87555e11103ba29d82640b96971ce34a425ab82d72e162c7d5c5"
+  },
+  {
+    "pair": "KO-PEP",
+    "path": "data/KO_PEP_2015_2023.csv",
+    "rows": 2264,
+    "sha256": "1d8d1e48b8690296855977e5db1a4a2c8375c3ff119ca801dad0321a30c22e7a"
+  },
+  {
+    "pair": "XOM-CVX",
+    "path": "data/XOM_CVX_2015_2023.csv",
+    "rows": 2264,
+    "sha256": "ea7918e1a480a9268a851e5563d7a6313c2f410e4c27cbe3b5e3d04d9fd21378"
+  }
+]

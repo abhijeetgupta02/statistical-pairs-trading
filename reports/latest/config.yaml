@@ -1,0 +1,6 @@
+{
+  "cost_bps": 1,
+  "entry": 1.5,
+  "rebalance": 21,
+  "train_days": 252
+}
