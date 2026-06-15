@@ -1,47 +1,59 @@
 {
   "AAPL-MSFT": {
     "adf_p": 0.12403572666540075,
-    "annual_return": 0.07128817752327432,
-    "annual_volatility": 0.1198133487553704,
-    "average_turnover": 0.07447607495128035,
+    "annual_return": 0.07026289717646184,
+    "annual_volatility": 0.1198194338495547,
+    "average_abs_net_exposure": 0.23198192777331567,
+    "average_gross_exposure": 0.5743411238189955,
+    "average_net_exposure": 0.04801494557713283,
+    "average_turnover": 0.0749686589241032,
     "cointegration_p": 0.2923061692353234,
     "cointegration_t": -2.470335829660697,
-    "max_drawdown": -0.20241635789639145,
-    "sharpe": 0.6345884424639098,
+    "max_drawdown": -0.20261123821227,
+    "sharpe": 0.6265690442901046,
     "sharpe_ci_95": [
-      -0.06496108780978316,
-      1.3503983573094878
+      -0.07238877551789455,
+      1.3424430771175158
     ],
-    "sortino": 0.7074991307616144
+    "sortino": 0.6990561271540684,
+    "trade_fraction": 0.5743411238189955
   },
   "KO-PEP": {
     "adf_p": 0.007258028630121739,
-    "annual_return": 0.014559494002553519,
-    "annual_volatility": 0.0849699106583474,
-    "average_turnover": 0.06943717620447076,
+    "annual_return": 0.013655091560445642,
+    "annual_volatility": 0.08497048966840808,
+    "average_abs_net_exposure": 0.28139432693572936,
+    "average_gross_exposure": 0.5325708602685231,
+    "average_net_exposure": -0.06579350093148055,
+    "average_turnover": 0.06988419074059227,
     "cointegration_p": 0.029427304124489084,
     "cointegration_t": -3.534865243591031,
-    "max_drawdown": -0.12881121592385636,
-    "sharpe": 0.21246926677970687,
+    "max_drawdown": -0.13006539843490972,
+    "sharpe": 0.20197234490759014,
     "sharpe_ci_95": [
-      -0.46457401379824037,
-      0.8896832056440249
+      -0.47538843387833635,
+      0.8792040571595084
     ],
-    "sortino": 0.2352342261998285
+    "sortino": 0.22386408713386244,
+    "trade_fraction": 0.5325708602685231
   },
   "XOM-CVX": {
     "adf_p": 0.0341505981310621,
-    "annual_return": -0.016283891755097146,
-    "annual_volatility": 0.10038239652802468,
-    "average_turnover": 0.04679360579939528,
+    "annual_return": -0.016881774738518374,
+    "annual_volatility": 0.10037937584936196,
+    "average_abs_net_exposure": 0.24415745702474542,
+    "average_gross_exposure": 0.729985082048732,
+    "average_net_exposure": 0.01968432590397808,
+    "average_turnover": 0.04728549256846382,
     "cointegration_p": 0.10676311155383489,
     "cointegration_t": -3.0146544359114107,
-    "max_drawdown": -0.30220626485870494,
-    "sharpe": -0.11336927047350817,
+    "max_drawdown": -0.3037492816620645,
+    "sharpe": -0.11943162342131612,
     "sharpe_ci_95": [
-      -0.7954338178740203,
-      0.5508353920359913
+      -0.8020266800592482,
+      0.5443402831539236
     ],
-    "sortino": -0.1373207295173914
+    "sortino": -0.1447103249716066,
+    "trade_fraction": 0.729985082048732
   }
 }

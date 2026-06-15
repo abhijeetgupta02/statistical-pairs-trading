@@ -1,6 +1,9 @@
 {
   "cost_bps": 1,
   "entry": 1.5,
+  "exit_z": 0.25,
   "rebalance": 21,
+  "slippage_bps": 0.5,
+  "stop": 3.5,
   "train_days": 252
 }

@@ -43,13 +43,26 @@ def sha256(path: Path) -> str:
 
 
 def save_json(path: Path, value: object) -> None:
-    def default(obj):
+    def clean(obj):
+        if isinstance(obj, dict):
+            return {key: clean(val) for key, val in obj.items()}
+        if isinstance(obj, list):
+            return [clean(item) for item in obj]
+        if isinstance(obj, tuple):
+            return [clean(item) for item in obj]
         if isinstance(obj, (np.integer, np.floating)):
-            return obj.item()
+            obj = obj.item()
+        if isinstance(obj, float) and not np.isfinite(obj):
+            return None
         if isinstance(obj, np.ndarray):
-            return obj.tolist()
+            return clean(obj.tolist())
         if isinstance(obj, pd.Timestamp):
             return obj.isoformat()
+        return obj
+
+    def default(obj):
         raise TypeError(type(obj).__name__)
 
-    path.write_text(json.dumps(value, indent=2, sort_keys=True, default=default) + "\n")
+    path.write_text(
+        json.dumps(clean(value), indent=2, sort_keys=True, default=default, allow_nan=False) + "\n"
+    )

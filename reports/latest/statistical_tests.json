@@ -1,20 +1,265 @@
 {
-  "AAPL-MSFT": {
-    "sharpe_ci_95": [
-      -0.06496108780978316,
-      1.3503983573094878
-    ]
+  "baseline_comparison": {
+    "AAPL-MSFT": {
+      "buy_and_hold_equal_weight": {
+        "annual_return": 0.30258928064869406,
+        "annual_volatility": 0.2644956708699051,
+        "max_drawdown": -0.3198595049664914,
+        "sharpe": 1.1323373259667115,
+        "sortino": 1.5119274608072482
+      },
+      "cash": {
+        "annual_return": 0.0,
+        "annual_volatility": 0.0,
+        "max_drawdown": 0.0,
+        "sharpe": 0.0,
+        "sortino": 0.0
+      },
+      "naive_zscore": {
+        "annual_return": 0.037202436678992035,
+        "annual_volatility": 0.09113109138903898,
+        "max_drawdown": -0.15112381500058736,
+        "sharpe": 0.44637998136761964,
+        "sortino": 0.5028988405657713
+      },
+      "strategy": {
+        "adf_p": 0.12403572666540075,
+        "annual_return": 0.07026289717646184,
+        "annual_volatility": 0.1198194338495547,
+        "average_abs_net_exposure": 0.23198192777331567,
+        "average_gross_exposure": 0.5743411238189955,
+        "average_net_exposure": 0.04801494557713283,
+        "average_turnover": 0.0749686589241032,
+        "cointegration_p": 0.2923061692353234,
+        "cointegration_t": -2.470335829660697,
+        "max_drawdown": -0.20261123821227,
+        "sharpe": 0.6265690442901046,
+        "sharpe_ci_95": [
+          -0.07238877551789455,
+          1.3424430771175158
+        ],
+        "sortino": 0.6990561271540684,
+        "trade_fraction": 0.5743411238189955
+      }
+    },
+    "KO-PEP": {
+      "buy_and_hold_equal_weight": {
+        "annual_return": 0.09118258337397123,
+        "annual_volatility": 0.1774861333095236,
+        "max_drawdown": -0.32369469775717985,
+        "sharpe": 0.5810279394621137,
+        "sortino": 0.6960894008836008
+      },
+      "cash": {
+        "annual_return": 0.0,
+        "annual_volatility": 0.0,
+        "max_drawdown": 0.0,
+        "sharpe": 0.0,
+        "sortino": 0.0
+      },
+      "naive_zscore": {
+        "annual_return": 0.008326930161178359,
+        "annual_volatility": 0.05001100744132451,
+        "max_drawdown": -0.15756574589246564,
+        "sharpe": 0.19079912853836498,
+        "sortino": 0.20739199156014043
+      },
+      "strategy": {
+        "adf_p": 0.007258028630121739,
+        "annual_return": 0.013655091560445642,
+        "annual_volatility": 0.08497048966840808,
+        "average_abs_net_exposure": 0.28139432693572936,
+        "average_gross_exposure": 0.5325708602685231,
+        "average_net_exposure": -0.06579350093148055,
+        "average_turnover": 0.06988419074059227,
+        "cointegration_p": 0.029427304124489084,
+        "cointegration_t": -3.534865243591031,
+        "max_drawdown": -0.13006539843490972,
+        "sharpe": 0.20197234490759014,
+        "sharpe_ci_95": [
+          -0.47538843387833635,
+          0.8792040571595084
+        ],
+        "sortino": 0.22386408713386244,
+        "trade_fraction": 0.5325708602685231
+      }
+    },
+    "XOM-CVX": {
+      "buy_and_hold_equal_weight": {
+        "annual_return": 0.10148156029617939,
+        "annual_volatility": 0.28818955708609084,
+        "max_drawdown": -0.574910317280937,
+        "sharpe": 0.47990606055800905,
+        "sortino": 0.6391633498179049
+      },
+      "cash": {
+        "annual_return": 0.0,
+        "annual_volatility": 0.0,
+        "max_drawdown": 0.0,
+        "sharpe": 0.0,
+        "sortino": 0.0
+      },
+      "naive_zscore": {
+        "annual_return": 0.004957020108451227,
+        "annual_volatility": 0.07428899879720563,
+        "max_drawdown": -0.17427485584897495,
+        "sharpe": 0.10358554376503568,
+        "sortino": 0.12710072984675125
+      },
+      "strategy": {
+        "adf_p": 0.0341505981310621,
+        "annual_return": -0.016881774738518374,
+        "annual_volatility": 0.10037937584936196,
+        "average_abs_net_exposure": 0.24415745702474542,
+        "average_gross_exposure": 0.729985082048732,
+        "average_net_exposure": 0.01968432590397808,
+        "average_turnover": 0.04728549256846382,
+        "cointegration_p": 0.10676311155383489,
+        "cointegration_t": -3.0146544359114107,
+        "max_drawdown": -0.3037492816620645,
+        "sharpe": -0.11943162342131612,
+        "sharpe_ci_95": [
+          -0.8020266800592482,
+          0.5443402831539236
+        ],
+        "sortino": -0.1447103249716066,
+        "trade_fraction": 0.729985082048732
+      }
+    }
   },
-  "KO-PEP": {
-    "sharpe_ci_95": [
-      -0.46457401379824037,
-      0.8896832056440249
-    ]
+  "bootstrap_sharpe_ci": {
+    "AAPL-MSFT": {
+      "sharpe_ci_95": [
+        -0.07238877551789455,
+        1.3424430771175158
+      ]
+    },
+    "KO-PEP": {
+      "sharpe_ci_95": [
+        -0.47538843387833635,
+        0.8792040571595084
+      ]
+    },
+    "XOM-CVX": {
+      "sharpe_ci_95": [
+        -0.8020266800592482,
+        0.5443402831539236
+      ]
+    }
   },
-  "XOM-CVX": {
-    "sharpe_ci_95": [
-      -0.7954338178740203,
-      0.5508353920359913
-    ]
+  "pair_selection": [
+    {
+      "adf_p": 0.007258028630121739,
+      "cointegration_p": 0.029427304124489084,
+      "cointegration_t": -3.534865243591031,
+      "pair": "KO-PEP",
+      "selected_at_5pct": true
+    },
+    {
+      "adf_p": 0.0341505981310621,
+      "cointegration_p": 0.10676311155383489,
+      "cointegration_t": -3.0146544359114107,
+      "pair": "XOM-CVX",
+      "selected_at_5pct": false
+    },
+    {
+      "adf_p": 0.12403572666540075,
+      "cointegration_p": 0.2923061692353234,
+      "cointegration_t": -2.470335829660697,
+      "pair": "AAPL-MSFT",
+      "selected_at_5pct": false
+    }
+  ],
+  "transaction_cost_sensitivity": {
+    "AAPL-MSFT": {
+      "0_bps": {
+        "annual_return": 0.07330164744286116,
+        "annual_volatility": 0.11980169011752802,
+        "max_drawdown": -0.20207289491942382,
+        "sharpe": 0.6503160630321462,
+        "sortino": 0.7189368830663965
+      },
+      "10_bps": {
+        "annual_return": 0.05319677774970888,
+        "annual_volatility": 0.11998075466915635,
+        "max_drawdown": -0.20565636223121075,
+        "sharpe": 0.49188606602526663,
+        "sortino": 0.5554362830888603
+      },
+      "1_bps": {
+        "annual_return": 0.07127490660109204,
+        "annual_volatility": 0.11981316137509769,
+        "max_drawdown": -0.20243182275679927,
+        "sharpe": 0.6344858309760012,
+        "sortino": 0.7073872506305042
+      },
+      "5_bps": {
+        "annual_return": 0.06320416487688374,
+        "annual_volatility": 0.11987335667234111,
+        "max_drawdown": -0.20386624216792337,
+        "sharpe": 0.5711270155262759,
+        "sortino": 0.6403985427198206
+      }
+    },
+    "KO-PEP": {
+      "0_bps": {
+        "annual_return": 0.016336303941744124,
+        "annual_volatility": 0.0849694658928448,
+        "max_drawdown": -0.12633992702202024,
+        "sharpe": 0.23306385709477032,
+        "sortino": 0.2545093583815275
+      },
+      "10_bps": {
+        "annual_return": -0.0014127415515524655,
+        "annual_volatility": 0.08505677711225353,
+        "max_drawdown": -0.18962108315910453,
+        "sharpe": 0.025776845350560768,
+        "sortino": 0.029067255604208274
+      },
+      "1_bps": {
+        "annual_return": 0.014548086112088576,
+        "annual_volatility": 0.08496967470276201,
+        "max_drawdown": -0.1288252819886685,
+        "sharpe": 0.2123372828332075,
+        "sortino": 0.23508851754323123
+      },
+      "5_bps": {
+        "annual_return": 0.007424876987795592,
+        "annual_volatility": 0.08498945603145351,
+        "max_drawdown": -0.15321045410956236,
+        "sharpe": 0.12940315112599515,
+        "sortino": 0.14448913332437682
+      }
+    },
+    "XOM-CVX": {
+      "0_bps": {
+        "annual_return": -0.01512372844988652,
+        "annual_volatility": 0.10038905087216458,
+        "max_drawdown": -0.2991825581662928,
+        "sharpe": -0.10161546610904683,
+        "sortino": -0.122722841358001
+      },
+      "10_bps": {
+        "annual_return": -0.02678970713202178,
+        "annual_volatility": 0.10037115177379118,
+        "max_drawdown": -0.32908292694220975,
+        "sharpe": -0.2203524013923678,
+        "sortino": -0.268523405776959
+      },
+      "1_bps": {
+        "annual_return": -0.016296079853958645,
+        "annual_volatility": 0.10038232682763776,
+        "max_drawdown": -0.30223028332341717,
+        "sharpe": -0.11349283254717718,
+        "sortino": -0.13747072279081496
+      },
+      "5_bps": {
+        "annual_return": -0.0209726785787665,
+        "annual_volatility": 0.10036639381663842,
+        "max_drawdown": -0.3142920986618205,
+        "sharpe": -0.16100062626308578,
+        "sortino": -0.1955565074992473
+      }
+    }
   }
 }
